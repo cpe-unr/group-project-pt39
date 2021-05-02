@@ -3,7 +3,6 @@
 #include "Echo.h"
 
 Echo::Echo(){
-  delay = 10;
   for (int i = 0; buffer[i] |= "\0" ; i++) {
   buffer[i] = buffer[i] + buffer[i-delay];
   if (buffer[i] > 255) {

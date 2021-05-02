@@ -3,7 +3,6 @@
 
 #include <cstdint>
 #include <cmath>
-#include "Wav.h"
 
 class Processor {
 public:
