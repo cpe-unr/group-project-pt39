@@ -4,9 +4,9 @@
 #include <cstdint>
 #include <cmath>
 
-class Processor {
+class Processor : public ReadWav {
 public:
-    virtual void processBuffer(unsigned char* buffer, int bufferSize) = 0;
+    virtual void processBuffer(unsigned char* buffer, int BUFFER_SIZE) = 0;
 };
 
 #endif

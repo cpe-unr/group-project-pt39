@@ -33,7 +33,7 @@ int main (int argc,char* argv[])
 
 	if (wavFile == NULL)
 	{
-		cout << "Wav File name " << filePath << " doees not exist: ";
+		cout << "Wav File name " << filePath << " does not exist: ";
 		return 1;
 	}
 // Read the header

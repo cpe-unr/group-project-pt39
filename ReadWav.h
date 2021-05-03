@@ -8,6 +8,7 @@ using namespace std;
 
 typedef struct WAV_HEADER
 {
+public:
 // RIFF chunk descriptor
 	char RIFF[4];
 	int ChunkSize;
@@ -25,6 +26,6 @@ typedef struct WAV_HEADER
 	char SubChunk2ID[4];
 	int SubChunk2Size;
 
-}wav_hdr;
+};wav_hdr;
 
 #endif

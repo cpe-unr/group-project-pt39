@@ -1,30 +1,18 @@
-#ifndef READWAV_H
-#define READWAV_H
-
 #include <iostream>
+#include <fstream>
 #include <string>
+
+#include "ReadWav.h"
 
 using namespace std;
 
-typedef struct WAV_HEADER
+ReadWav::ReadWav ()
 {
-// RIFF chunk descriptor
-	char RIFF[4];
-	int ChunkSize;
-	char WAVE[4];
-// "fmt" sub-chunk
-	char Format[4];
-	int Chunk1Size;
-	short AudioFormat;
-	short NumberOfChannels;
-	int SampleRate;
-	int ByteRate;
-	short SampleAlignment;
-	short BitsPerSample;
-// "data" sub-chunk
-	char SubChunk2ID[4];
-	int SubChunk2Size;
+	cout << "hello" << endl;
 
-}wav_hdr;
+	FILE *fp = NULL;
+	fp = fopen("test.wav", "r");
 
-#endif
+	fread(RIFF, sizeof(char), 4, fp);
+	cout << RIFF << endl;
+}
