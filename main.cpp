@@ -5,6 +5,7 @@
 using namespace std;
 
 int getFileSize(FILE* inFile);
+int getMenuChoice();
 
 int main (int argc,char* argv[])
 {
@@ -91,7 +92,47 @@ int main (int argc,char* argv[])
 	}
 
 	return 0;
+    
+
+//#include "Wav.h"
+//#include "Processor.h"
+//#include "echo.h"
+//#include "noisegate.h"
+/*When all the files are read and processed, the user can choose to modify the metadata of anyfile. When the modification is complete, the file must be saved with the new metadata. Themodifications should override any current metadata, or create the metadata if it didn’t existpreviously.The user may choose to process a file by choosing one or more processors. Processorsshould be applied in sequence.  After processing, the user should be prompted for a file name and if valid, anew file is created with the processed audio. The user is not allowed to save the file under thesame name as any of the existing files.If the user chooses to do so, a CSV file can be exported listing all the files, their technicalinformation (sample rates, etc.), and the file metadata. If no metadata exists, the phrase “Nometadata present” should be included in the description for that file.
+using namespace std;
+*/
+
+
+  int userChoice;
+    do {
+        userChoice = getMenuChoice();
+
+        switch(userChoice){
+            case 0:
+                return 0;
+            case 1:
+      //call noisegate
+                break;
+            case 2:
+      //call echo
+                break;
+            case 3:
+      //call normalizer
+                break;
+            case 4:
+      //export file
+      //check name
+                break;
+            default:
+                cout << "Please enter a valid option!\n";
+            }
+
+    } while (userChoice != 0);
+
+    return 0;
 }
+
+
 
 int getFileSize (FILE* inFile)
 {
@@ -102,4 +143,14 @@ int getFileSize (FILE* inFile)
 
 	fseek(inFile, 0, SEEK_SET);
 	return fileSize;
+}
+
+int getMenuChoice(){
+
+    int userChoice;
+  cout<<"How would you like to modify the data?\n1. Noisegate\n2. Echo\n3. Normalizer\n4. Export and Save\n0. Quit";
+  
+  cin>> userChoice;
+
+    return(userChoice);
 }
