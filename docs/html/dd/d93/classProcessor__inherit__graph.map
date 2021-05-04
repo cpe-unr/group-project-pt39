@@ -1,0 +1,5 @@
+<map id="Processor" name="Processor">
+<area shape="rect" id="node2" href="$dc/dd7/classEcho.html" title="Echo\&lt; E \&gt;" alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node3" href="$d0/d32/classNoisegate.html" title="Noisegate" alt="" coords="115,80,197,107"/>
+<area shape="rect" id="node4" href="$dc/d6d/classNormalizer.html" title="Normalizer" alt="" coords="221,80,307,107"/>
+</map>
