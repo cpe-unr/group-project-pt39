@@ -8,6 +8,9 @@ using namespace std;
 class Normalizer :public Processor{
 
 public:
+    /**
+    constructor for Normalizer class
+     */
     Normalizer();
     
    /**

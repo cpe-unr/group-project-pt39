@@ -9,7 +9,14 @@ class Noisegate: public Processor{
     float threshold;
 
 public:
+    /**
+    constructor for Noisegate class
+     */
     Noisegate();
+    /**
+    parmaterized constructor for Noisegate
+    *@param name-newThreshold- multiplier for what the max min amp can be
+     */
     Noisegate(float newThreshold);
     
     /**
@@ -22,7 +29,7 @@ public:
         const int maxAmp = 255;
 
         for(int i = 0; i < bufferSize; i++){
-            if (buffer[i] > (threshold * maxAmp)){
+            if (buffer[i] < (threshold * maxAmp)){
                 buffer[i] = 0;
         }
     }
