@@ -1,27 +1,29 @@
-#ifndef NOISEGATE_H
-#define NOISEGATE_H
+#ifndef NORMALIZER_H
+#define NORMALIZER_H
 
 #include "Processor.h"
 
-//using namespace std;
+using namespace std;
 
-class Noisegate : public Processor{
-    float threshold;
+class Normalizer :public Processor{
 
 public:
-    Noisegate();
-    Noisegate(float newThreshold);
+    Normalizer();
+   
+    template<typename T>
+    void processBuffer(T buffer, int bufferSize){
 
-template <typename T>
-void processBuffer(T buffer, int bufferSize) {
-    const int maxAmp = 255;
-
+    int max = 0;
     for(int i = 0; i < bufferSize; i++){
-        if (buffer[i] > (threshold * maxAmp)){
-            buffer[i] = 0;
+        if (buffer[i] > max){
+            max =  buffer[i];
         }
+  }
+  int multiplier = 255/max;
+
+   for(int i = 0; i < bufferSize; i++){
+        buffer[i] =  buffer[i] * multiplier;
     }
 }
 };
-
 #endif

@@ -13,7 +13,7 @@ public:
     Noisegate(float newThreshold);
 
 template <typename T>
-void processBuffer(T buffer, int bufferSize) {
+void processBuffer(T buffer, int bufferSize){
     const int maxAmp = 255;
 
     for(int i = 0; i < bufferSize; i++){
