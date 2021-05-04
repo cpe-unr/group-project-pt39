@@ -1,3 +1,4 @@
+/** @file */
 //#include "Wav.h"
 //#include "Processor.h"
 //#include "echo.h"
@@ -42,7 +43,7 @@ int main (int argc, char* argv[])
 
     Wav wav;
     wav.readFile(filePath);
-    
+
   int userChoice;
     do {
 
@@ -87,7 +88,7 @@ int getMenuChoice(){
 
     int userChoice;
   cout<<"How would you like to modify the data?\n1. Noisegate\n2. Echo\n3. Normalizer\n4. Export and Save\n0. Quit";
-  
+
   cin>> userChoice;
 
     return(userChoice);
