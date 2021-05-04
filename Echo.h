@@ -11,6 +11,7 @@
   * This is the Echo class.
 */
 
+template <class E>
 class Echo: public Processor{
 
 public:
