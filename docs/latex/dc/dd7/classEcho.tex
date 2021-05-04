@@ -1,0 +1,64 @@
+\hypertarget{classEcho}{}\section{Echo$<$ E $>$ Class Template Reference}
+\label{classEcho}\index{Echo$<$ E $>$@{Echo$<$ E $>$}}
+
+
+{\ttfamily \#include $<$Echo.\+h$>$}
+
+
+
+Inheritance diagram for Echo$<$ E $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Echo$<$ E $>$\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEcho_a445e0cac428a957e2f4d97d28bb2ff75}{Echo} ()
+\item 
+void \hyperlink{classEcho_a3e23a70d522b79ef1e5b9df90c2af183}{process\+Buffer} (unsigned char $\ast$buffer, int B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class E$>$\newline
+class Echo$<$ E $>$}
+
+This is the \hyperlink{classEcho}{Echo} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEcho_a445e0cac428a957e2f4d97d28bb2ff75}\label{classEcho_a445e0cac428a957e2f4d97d28bb2ff75}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{Echo()}{Echo()}}
+{\footnotesize\ttfamily template$<$class E $>$ \\
+\hyperlink{classEcho}{Echo}$<$ E $>$\+::\hyperlink{classEcho}{Echo} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Individually adds 10 to the buffer values, does not allow values to exceed 32767 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEcho_a3e23a70d522b79ef1e5b9df90c2af183}\label{classEcho_a3e23a70d522b79ef1e5b9df90c2af183}} 
+\index{Echo@{Echo}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}}
+{\footnotesize\ttfamily template$<$class E $>$ \\
+void \hyperlink{classEcho}{Echo}$<$ E $>$\+::process\+Buffer (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Uses process\+Buffer to get buffer data and size for processing 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ contains .wav file Data, array of unsigned char$\ast$ \\
+\hline
+{\em B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE} & -\/ contains size of buffer, integer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_a13e6240144c7a530079b0e2ae4a4526d}{Processor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Echo.\+h\item 
+Echo.\+cpp\end{DoxyCompactItemize}

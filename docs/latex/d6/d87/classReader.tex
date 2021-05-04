@@ -1,0 +1,59 @@
+\hypertarget{classReader}{}\section{Reader Class Reference}
+\label{classReader}\index{Reader@{Reader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classReader_a7cd76dec58af34626d0d7f928d077773}\label{classReader_a7cd76dec58af34626d0d7f928d077773}} 
+{\bfseries Reader} (F\+I\+LE $\ast$)
+\item 
+void \hyperlink{classReader_aa33ad038bf60829bd30149a5b8436bb2}{Read\+Wav} (F\+I\+LE $\ast$)
+\item 
+int \hyperlink{classReader_a26e7eb6fabd4424304d00658907a4878}{get\+File\+Size} (F\+I\+LE $\ast$in\+File)
+\item 
+unsigned char $\ast$ \hyperlink{classReader_a5cc512699b1ae2e13186977ccdffe8f7}{get\+Buffer} ()
+\item 
+int \hyperlink{classReader_af56ef824ae4f49fb6cfc89d7443e9ede}{get\+Buffer\+Size} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classReader_a5cc512699b1ae2e13186977ccdffe8f7}\label{classReader_a5cc512699b1ae2e13186977ccdffe8f7}} 
+\index{Reader@{Reader}!get\+Buffer@{get\+Buffer}}
+\index{get\+Buffer@{get\+Buffer}!Reader@{Reader}}
+\subsubsection{\texorpdfstring{get\+Buffer()}{getBuffer()}}
+{\footnotesize\ttfamily unsigned char$\ast$ Reader\+::get\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The function returns the buffer after being called \mbox{\Hypertarget{classReader_af56ef824ae4f49fb6cfc89d7443e9ede}\label{classReader_af56ef824ae4f49fb6cfc89d7443e9ede}} 
+\index{Reader@{Reader}!get\+Buffer\+Size@{get\+Buffer\+Size}}
+\index{get\+Buffer\+Size@{get\+Buffer\+Size}!Reader@{Reader}}
+\subsubsection{\texorpdfstring{get\+Buffer\+Size()}{getBufferSize()}}
+{\footnotesize\ttfamily int Reader\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The function calls in the Wav\+Header struct and pulls the bits per sample variable to determine buffer type \mbox{\Hypertarget{classReader_a26e7eb6fabd4424304d00658907a4878}\label{classReader_a26e7eb6fabd4424304d00658907a4878}} 
+\index{Reader@{Reader}!get\+File\+Size@{get\+File\+Size}}
+\index{get\+File\+Size@{get\+File\+Size}!Reader@{Reader}}
+\subsubsection{\texorpdfstring{get\+File\+Size()}{getFileSize()}}
+{\footnotesize\ttfamily int Reader\+::get\+File\+Size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{in\+File }\end{DoxyParamCaption})}
+
+Reads in a F\+I\+LE pointer to get the size fo the wav file 
+\begin{DoxyParams}{Parameters}
+{\em F\+I\+LE} & pointer to determine size of audio file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReader_aa33ad038bf60829bd30149a5b8436bb2}\label{classReader_aa33ad038bf60829bd30149a5b8436bb2}} 
+\index{Reader@{Reader}!Read\+Wav@{Read\+Wav}}
+\index{Read\+Wav@{Read\+Wav}!Reader@{Reader}}
+\subsubsection{\texorpdfstring{Read\+Wav()}{ReadWav()}}
+{\footnotesize\ttfamily void Reader\+::\+Read\+Wav (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{wav\+File }\end{DoxyParamCaption})}
+
+Takes in a F\+I\+LE pointer of the audio data and displays the information 
+\begin{DoxyParams}{Parameters}
+{\em the} & audio wav data as a F\+I\+LE Pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Read\+Wav.\+h\item 
+Read\+Wav.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,62 @@
+\hypertarget{classNoisegate}{}\section{Noisegate Class Reference}
+\label{classNoisegate}\index{Noisegate@{Noisegate}}
+
+
+Inheritance diagram for Noisegate\+:
+% FIG 0
+
+
+Collaboration diagram for Noisegate\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNoisegate_a15c5621437e7378814c69a58fc60b326}{Noisegate} ()
+\item 
+\hyperlink{classNoisegate_a4dc5881a80f29ebc6e9be12dae2bd632}{Noisegate} (float new\+Threshold)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classNoisegate_aee5ff92d38286e509055fa6d117415fd}{process\+Buffer} (T buffer, int buffer\+Size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNoisegate_a15c5621437e7378814c69a58fc60b326}\label{classNoisegate_a15c5621437e7378814c69a58fc60b326}} 
+\index{Noisegate@{Noisegate}!Noisegate@{Noisegate}}
+\index{Noisegate@{Noisegate}!Noisegate@{Noisegate}}
+\subsubsection{\texorpdfstring{Noisegate()}{Noisegate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Noisegate\+::\+Noisegate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor for \hyperlink{classNoisegate}{Noisegate} class \mbox{\Hypertarget{classNoisegate_a4dc5881a80f29ebc6e9be12dae2bd632}\label{classNoisegate_a4dc5881a80f29ebc6e9be12dae2bd632}} 
+\index{Noisegate@{Noisegate}!Noisegate@{Noisegate}}
+\index{Noisegate@{Noisegate}!Noisegate@{Noisegate}}
+\subsubsection{\texorpdfstring{Noisegate()}{Noisegate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Noisegate\+::\+Noisegate (\begin{DoxyParamCaption}\item[{float}]{new\+Threshold }\end{DoxyParamCaption})}
+
+parmaterized constructor for \hyperlink{classNoisegate}{Noisegate} 
+\begin{DoxyParams}{Parameters}
+{\em name-\/new\+Threshold-\/} & multiplier for what the max min amp can be \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNoisegate_aee5ff92d38286e509055fa6d117415fd}\label{classNoisegate_aee5ff92d38286e509055fa6d117415fd}} 
+\index{Noisegate@{Noisegate}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Noisegate@{Noisegate}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Noisegate\+::process\+Buffer (\begin{DoxyParamCaption}\item[{T}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+templated noisegate to handle different types of audio 
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ buffer -\/ of templated type T \\
+\hline
+{\em name-\/} & buffersize-\/ sent in buffer size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+noisegate.\+h\item 
+noisegate.\+cpp\end{DoxyCompactItemize}
