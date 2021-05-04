@@ -6,26 +6,18 @@
 
 using namespace std;
 
-typedef struct WAV_HEADER
+class Reader
 {
-public:
-// RIFF chunk descriptor
-	char RIFF[4];
-	int ChunkSize;
-	char WAVE[4];
-// "fmt" sub-chunk
-	char Format[4];
-	int Chunk1Size;
-	short AudioFormat;
-	short NumberOfChannels;
-	int SampleRate;
-	int ByteRate;
-	short SampleAlignment;
-	short BitsPerSample;
-// "data" sub-chunk
-	char SubChunk2ID[4];
-	int SubChunk2Size;
+    string testing;
 
-};wav_hdr;
+public:
+
+    Reader ();
+    Reader (FILE*);
+
+    void ReadWav (FILE*);
+    int getFileSize(FILE* inFile);
+
+};
 
 #endif
