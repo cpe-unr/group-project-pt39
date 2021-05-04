@@ -9,7 +9,12 @@ class Normalizer :public Processor{
 
 public:
     Normalizer();
-   
+    
+   /**
+    *templated normalizer to handle different types of audio
+    *@param name - buffer - of templated type T
+    *@param name- buffersize- sent in buffer size
+    */
     template<typename T>
     void processBuffer(T buffer, int bufferSize){
 
