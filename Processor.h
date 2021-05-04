@@ -5,15 +5,13 @@
 #include <cstdint>
 #include <cmath>
 
-<<<<<<< HEAD
-class Processor :public ReadWav {
-=======
+
 /**
   * This is the Processor class (virtual, abstract).
 */
 
-class Processor : public ReadWav {
->>>>>>> 2d7f6bbe9fe43e0c3ad8bf77f0078396604e5061
+class Processor {
+
 public:
   /**
   * Gets buffer data and size to pass to classes which inherit from Processor

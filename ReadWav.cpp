@@ -91,3 +91,12 @@ int Reader::getFileSize (FILE* inFile)
     return fileSize;
 }
 
+void Reader::writeFile(const std::string &outFileName) {
+    std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
+    outFile.write((char*)&waveHeader,sizeof(wav_header));
+    outFile.write((char*)buffer, waveHeader.data_bytes);
+    outFile.close();
+}
+//unsigned char *Reader::getBuffer(){
+    //return buffer;
+//}

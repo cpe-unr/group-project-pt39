@@ -1,16 +1,11 @@
-<<<<<<< HEAD
+
 #include "Wav.h"
+#include "ReadWav.h"
 #include "Processor.h"
 #include "Echo.h"
 #include "noisegate.h"
 #include "normalizer.h"
-=======
-/** @file */
-//#include "Wav.h"
-//#include "Processor.h"
-//#include "echo.h"
-//#include "noisegate.h"
->>>>>>> 2d7f6bbe9fe43e0c3ad8bf77f0078396604e5061
+
 #include <iostream>
 
 using namespace std;
@@ -49,8 +44,8 @@ int main (int argc, char* argv[])
 
     //wavFile = wavfile;
 
-    Wav wav;
-    wav.readFile(filePath);
+    Reader wav;
+    //wav.ReadWav(filePath);
 
   int userChoice;
     do {

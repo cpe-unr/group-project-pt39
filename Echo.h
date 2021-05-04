@@ -6,16 +6,13 @@
 #include <cstdint>
 #include <cmath>
 
-<<<<<<< HEAD
 
-class Echo: public Processor{
-=======
 /**
   * This is the Echo class.
 */
 
-class Echo() : public Processor{
->>>>>>> 2d7f6bbe9fe43e0c3ad8bf77f0078396604e5061
+class Echo: public Processor{
+
 public:
   Echo();
   /**

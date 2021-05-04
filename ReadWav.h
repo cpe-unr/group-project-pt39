@@ -9,6 +9,7 @@ using namespace std;
 class Reader
 {
     string testing;
+    //unsigned char* buffer = NULL ?? help
 
 public:
 
@@ -17,6 +18,8 @@ public:
 
     void ReadWav (FILE*);
     int getFileSize(FILE* inFile);
+    void writeFile(const std::string &outFileName);
+   
 
 };
 
