@@ -1,4 +1,4 @@
-
+/** @file */
 #include "Wav.h"
 #include "ReadWav.h"
 #include "Processor.h"
@@ -7,6 +7,13 @@
 #include "normalizer.h"
 
 #include <iostream>
+
+/**
+  * This is the main program.
+  * First asks the user for a file input, then extracts the relevant data.
+  * Prints data back to user then asks which processor the user wants to use.
+  * Allows user to modify the data in the .wav file and saves it as a seperate .wav file.
+*/
 
 using namespace std;
 int getMenuChoice();

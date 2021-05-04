@@ -8,19 +8,18 @@ using namespace std;
 
 class Reader
 {
-    string testing;
-    //unsigned char* buffer = NULL ?? help
-
+	string testing;
+    unsigned char* buffer = NULL;
 public:
 
-    Reader ();
-    Reader (FILE*);
+	Reader ();
+	Reader (FILE*);
 
-    void ReadWav (FILE*);
-    int getFileSize(FILE* inFile);
-    void writeFile(const std::string &outFileName);
-   
+	void ReadWav (FILE*);
+	int getFileSize(FILE* inFile);
 
+    unsigned char *getBuffer();
+    int getBufferSize() const;
 };
 
 #endif
