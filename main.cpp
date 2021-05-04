@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 #include "Wav.h"
 #include "Processor.h"
 #include "Echo.h"
 #include "noisegate.h"
 #include "normalizer.h"
+=======
+/** @file */
+//#include "Wav.h"
+//#include "Processor.h"
+//#include "echo.h"
+//#include "noisegate.h"
+>>>>>>> 2d7f6bbe9fe43e0c3ad8bf77f0078396604e5061
 #include <iostream>
 
 using namespace std;
@@ -43,7 +51,7 @@ int main (int argc, char* argv[])
 
     Wav wav;
     wav.readFile(filePath);
-    
+
   int userChoice;
     do {
 
@@ -88,7 +96,7 @@ int getMenuChoice(){
 
     int userChoice;
   cout<<"How would you like to modify the data?\n1. Noisegate\n2. Echo\n3. Normalizer\n4. Export and Save\n0. Quit";
-  
+
   cin>> userChoice;
 
     return(userChoice);

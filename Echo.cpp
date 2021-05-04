@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/**
+  * Individually adds 10 to the buffer values, does not allow values to exceed 32767
+*/
 Echo::Echo()
 {
   int delay = 10;
